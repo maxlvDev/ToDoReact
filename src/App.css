@@ -1,0 +1,118 @@
+.App {
+  width: 800px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: GhostWhite;
+  font-family: 'Raleway', sans-serif;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+body {
+  background: linear-gradient(to bottom right, #F0A1EA, #0F4657);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+html {
+  min-height: 100%;
+}
+
+form {
+  margin-top: 15px;
+  align-items: center;
+}
+
+.post {
+  display: flex;
+  padding: 15px;
+  border: 2px solid GhostWhite;
+  margin-top: 15px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.post__btns {
+  display: flex;
+}
+
+.Mybutton {
+  padding: 5px 15px;
+  color: GhostWhite;
+  font-size: 14px;
+  background: transparent;
+  border: 1px solid GhostWhite;
+  cursor: pointer;
+}
+
+.MyInput {
+    width: 100%;
+    padding: 5px 15px;
+    margin: 5px 0;
+    border: 1px solid GhostWhite;
+    background-color: transparent;
+    outline: none;
+}
+
+input::-moz-placeholder { 
+  color: GhostWhite; 
+}
+
+input::-webkit-input-placeholder { 
+  color: GhostWhite; 
+}
+
+input:focus::-webkit-input-placeholder { 
+  color:transparent;
+}
+
+input:focus:-moz-placeholder { 
+  color:transparent;
+}
+
+input:focus::-moz-placeholder {
+   color:transparent;
+   color: GhostWhite; 
+}
+
+input:focus:-ms-input-placeholder { 
+  color:transparent; 
+} 
+
+.post-enter {
+  opacity: 0;
+}
+
+.post-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+
+.post-exit {
+  opacity: 1;
+}
+
+.post-exit-active {
+  opacity: 0;
+  transition: opacity 500ms ease-in;
+}
+
+@media(max-width:900px) {
+  .App{
+    width: 400px;
+  }
+}
+
+@media(max-width:450px) {
+  .App{
+    width: 300px;
+  }
+}
